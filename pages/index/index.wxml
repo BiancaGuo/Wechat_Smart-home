@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container" background="E:\大二下\微信小程序\温湿度监测系统\images\blue.jpeg">
+  <view class="userinfo">
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+    <view  bindtap="bindViewTap" class="userinfo">
+  </view>
+
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <!-- <view class="choose-button1">
+
+  <button class="button" bindtap="ChooseRoom" plain="true" hover="true" hover-class="button-hover" size="default">房间1</button>
+  <button class="button" bindtap="ChooseRoom" hover="true" hover-class="button-hover" plain="true" size="default">房间2</button>
+  </view>
+
+ <view class="choose-button2">
+  <button class="button" bindtap="ChooseRoom" hover="true" hover-class="button-hover" plain="true">房间3</button>
+  <button class="button" bindtap="ChooseRoom" hover="true" hover-class="button-hover" plain="true">房间4</button>
+</view> -->
+
+ <!-- <view class="my-plant">
+  <button class="button" bindtap="ChooseRoom" plain="true" hover="true" hover-class="button-hover" size="default">我的植物</button>
+</view>  -->
+
+ 
+<view class="my-plant">
+  <button class="button" bindtap="MyPlant" plain="true" hover="true" hover-class="button-hover" size="default">我的植物</button>
+</view> 
+  
+
+</view>

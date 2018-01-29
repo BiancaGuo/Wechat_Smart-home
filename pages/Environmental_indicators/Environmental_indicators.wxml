@@ -1,0 +1,85 @@
+<!--humidity.wxml-->
+<view class="container">
+
+<view class="EnvironmentCondition">
+    <view class="get-time" name="get-time">当前时间：<text class="time">{{datetime}}</text>
+    </view>
+
+    <view class="humidity" name="humidity">当前湿度：<text class="humidity">{{result.humidity}}%</text>
+    </view>
+
+     <view class="temperature" name="temperature">当前温度：<text class="temperature">{{result.temperature}}℃</text>
+     </view>
+
+    <view class="co2" name="co2">当前co2浓度：
+<text class="co2">{{result.co2}}</text>
+    </view>
+
+    <!-- <view class="pm" name="pm">当前甲醛含量：
+<text class="pm">{{}}</text>
+    </view> -->
+    
+    <!--<block wx:for="{{char_result}}">
+        <view>
+            <text>{{item.temperature}}</text>
+        </view>
+    </block>-->
+
+<view class="ChangeChar">
+  <button class="button" bindtap="ChangeChar" plain="true" hover="true" hover-class="button-hover" size="mini">{{charname}}</button>
+</view> 
+
+<view wx:if="{{condition1}}">
+<canvas canvas-id="TemperatureCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+
+<view wx:if="{{condition2}}">
+<canvas canvas-id="HumidityCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+
+<view class="ChangeStatue">
+
+
+<view class="ChangeStatue1">
+<view class="ChangeTemperature">
+  <button class="button" bindtap="ChangeTemperature" plain="true" hover="true" hover-class="button-hover" size="mini">调节温度</button>
+</view> 
+
+<view class="ChangeHumidy">
+  <button class="button" bindtap="ChangeHumidy" plain="true" hover="true" hover-class="button-hover" size="mini">调节湿度</button>
+</view>
+</view>
+
+
+<view class="ChangeStatue2">
+<view class="ChangeLight">
+  <button class="button" bindtap="ChangeLight" plain="true" hover="true" hover-class="button-hover" size="mini">调节光照</button>
+</view>
+
+<view class="ChangeVideo">
+  <button class="button" bindtap="ChangeVideo" plain="true" hover="true" hover-class="button-hover" size="mini">实时监控</button>
+</view>
+</view>
+</view>
+</view>
+
+
+<!-- 实时监控 -->
+<!-- <view class="getVideo">
+ <video class="video" src="{{video_src}}"  controls type="application/vnd.apple.mpegurl"></video>
+ <view class="btn-area">
+  <button class="videoButton" bindtap="getVideo" type="primary">实时监控</button>
+ </view>
+
+</view> -->
+
+
+<!--<button class="infraredControl" type="primary" bindtap="updateData">调节</button>-->
+    
+<!-- <image class="controlButton" src="/images/control.png" mode="aspectFill" bindtap="upData"/>  
+<image class="controlButton" src="/images/control2.png" mode="aspectFill" bindtap="downData"/>   -->
+
+
+
+
+</view>

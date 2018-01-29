@@ -1,0 +1,72 @@
+/**humidity.wxss**/
+  page {  
+    display: block;  
+    min-height: 100%;  
+    background-image: url(http://47.95.246.160/images/blue2.jpeg);
+    
+  }  
+
+
+.time{
+    font-size: 40rpx;
+}
+.container{
+  display: flex;
+  flex-flow:column;
+  justify-content:center;
+  font-size: 45rpx;
+  font-weight:bold;
+  font-family: Microsoft YaHei; 
+  line-height:1.5;
+}
+
+.EnvironmentCondition{
+  margin-top:100rpx;
+  margin-left: 80rpx;
+}
+.updateData{
+  margin-top: 100rpx;
+}
+
+/* 例如设计图尺寸为320 x 250 */
+.canvas {
+  margin-top: 50rpx;
+  margin-bottom: 35rpx;
+  width: 640rpx;
+  height: 500rpx;
+  font-weight:bold;
+}
+
+.controlButton{
+  
+   margin: 0 auto;
+   width: 80rpx;
+   height: 80rpx;
+   margin-bottom: 10rpx;
+}
+
+
+
+.add-plant{
+  margin-top: 80rpx;
+  margin-left:50rpx;
+}
+
+.plant{
+  margin-top: 80rpx;
+  margin-left:220rpx;
+  width: 300rpx;
+  height: 200rpx;
+  /* flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.device_name{
+  margin-top: 15rpx;
+  display: flex;
+  flex-flow:column;
+  justify-content:center;
+  margin-left: 320rpx;
+  font-size: 35rpx;
+}

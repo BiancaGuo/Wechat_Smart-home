@@ -1,0 +1,29 @@
+<!--humidity.wxml-->
+
+<view class="page" style="background-image: url({{pageBackgroundColor}});  " >
+<!-- <button bindtap="changeColor" hover-class="none">点击修改背景颜色</button> -->
+
+
+<view class="container">
+
+<view class="Condition">
+    <view class="TemperatureCondition" name="TemperatureCondition">当前温度情况：<text class="time">{{TemperatureCondition}}</text>
+    </view>
+</view>
+
+
+<view class="ChangeStatue">
+  <view style="display:flex;flex-direction:row;background-color:#ffffff;height:50px;line-height:50px;">
+  <view class="dtemperature" style="font-weight:bold;">降温模式</view>
+  <view style="position:absolute;right:120rpx;">
+  <!-- type="switch checked"  -->
+    <switch class="ChangeTemperature" checked="{{switchChecked}}" bindchange="ChangeTemperature"/>
+  </view>
+</view>
+
+
+</view>
+
+</view>
+
+</view>

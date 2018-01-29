@@ -1,0 +1,48 @@
+/**humidity.wxss**/
+.page {
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  
+}
+
+.time{
+    font-size: 40rpx;
+}
+.container{
+  display: flex;
+  flex-flow:column;
+  justify-content:center;
+  font-size: 45rpx;
+  font-weight:bold;
+  font-family: Microsoft YaHei; 
+  line-height:1.5;
+}
+
+
+/* 例如设计图尺寸为320 x 250 */
+.canvas {
+  margin-top: 50rpx;
+  margin-bottom: 35rpx;
+  width: 640rpx;
+  height: 500rpx;
+  font-weight:bold;
+}
+
+.TemperatureCondition{
+  margin-top: 150rpx;
+  margin-left: 150rpx;
+}
+
+.dtemperature{
+  margin-left: 150rpx;
+}
+
+.ChangeStatue{
+  margin-top: 150rpx;
+}
+

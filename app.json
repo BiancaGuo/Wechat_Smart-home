@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",                     "pages/Environmental_indicators/Environmental_indicators",
+"pages/Choose_Plant/Choose_Plant",
+"pages/Change_Humidy/Change_Humidy",
+"pages/Change_Temperature/Change_Temperature",
+"pages/Change_Video/Change_Video",
+"pages/Change_Light/Change_Light"
+   
+    
+  ],
+ 
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "环境监测系统",
+    "navigationBarTextStyle":"black"
+  }
+}

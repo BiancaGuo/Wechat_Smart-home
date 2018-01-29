@@ -1,0 +1,33 @@
+<!--humidity.wxml-->
+<view class="container">
+
+
+
+<view class="add-plant">
+  <button class="button" bindtap="AddPlant" plain="true" hover="true" hover-class="button-hover" size="mini">+ 添加植物</button>
+</view> 
+<modal hidden="{{hiddenmodalput}}" title="请输入设备编号" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <input class="number" bindinput ="NumberInput" type='text' placeholder="编号" auto-focus/>
+    <!-- <input class="number" bindinput ="NumberInput" type='text' placeholder="编号" auto-focus/> -->
+    <!-- <input type='number' placeholder="手机" auto-focus/>   -->
+</modal>
+
+
+<!-- <button bindtap="insert">增加按钮</button>  -->
+<!-- <view wx:for="{{newPlant}}" wx:key="key" > -->
+<view wx:if="{{condition1}}">
+   <image class="plant" id="device_id_1"  bindtap="ChoosePlant" src="http://47.95.246.160/images/plant.jpg" mode="widthFix"></image>
+   <text class="device_name">{{device_name_1}}</text>  
+</view>
+
+<view wx:if="{{condition2}}">
+   <image class="plant" id="device_id_2"  bindtap="ChoosePlant" src="http://47.95.246.160/images/plant.jpg" mode="widthFix"></image>
+   <text class="device_name">{{device_name_2}}</text>  
+</view>
+
+<view wx:if="{{condition3}}">
+   <image class="plant" id="device_id_3"  bindtap="ChoosePlant" src="http://47.95.246.160/images/plant.jpg" mode="widthFix"></image>
+   <text class="device_name">{{device_name_3}}</text>  
+</view>  
+
+</view>

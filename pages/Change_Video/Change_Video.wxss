@@ -1,0 +1,99 @@
+/**humidity.wxss**/
+.page {
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  
+} 
+
+
+.time{
+    font-size: 40rpx;
+}
+.container{
+  display: flex;
+  flex-flow:column;
+  justify-content:center;
+  font-size: 45rpx;
+  font-weight:bold;
+  font-family: Microsoft YaHei; 
+  line-height:1.5;
+}
+
+.EnvironmentCondition{
+  margin-top:100rpx;
+  margin-left: 80rpx;
+}
+.updateData{
+  margin-top: 100rpx;
+}
+
+/* 例如设计图尺寸为320 x 250 */
+.canvas {
+  margin-top: 50rpx;
+  margin-bottom: 35rpx;
+  width: 640rpx;
+  height: 500rpx;
+  font-weight:bold;
+}
+
+.controlButton{
+  
+   margin: 0 auto;
+   width: 80rpx;
+   height: 80rpx;
+   margin-bottom: 10rpx;
+}
+
+
+.videoButton{
+  display: flex;
+  flex-direction: row;
+  text-align:center; 
+  margin-top: 100rpx;
+  margin-bottom: 30rpx;
+  /*margin-left: 180rpx;*/
+  width: 300rpx;
+  font-size:30rpx;
+}
+
+
+.video{
+  margin-top: 150rpx;
+  margin-left:80rpx;
+}
+
+.getVideo{
+  margin-top: 150rpx;
+}
+
+.ChangeStatue{
+  margin-top: 600rpx;
+}
+
+.ChangeStatue1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 80rpx;
+}
+
+
+.ChangeStatue2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 80rpx;
+}
+
+.ChangeHumidy{
+  margin-left: 30rpx;
+
+}
+
+.ChangeVideo{
+
+  margin-left: 30rpx;
+}

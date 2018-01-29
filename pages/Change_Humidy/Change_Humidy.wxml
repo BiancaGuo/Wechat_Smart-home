@@ -1,0 +1,30 @@
+<view class="page" style="background-image: url({{pageBackgroundColor}});  " >
+
+<view class="Condition">
+    <view class="HumidyCondition" name="HumidyCondition">当前湿度情况：<text class="time">{{HumidyCondition}}</text>
+    </view>
+</view>
+
+
+<view class="wrap">
+
+  <view class="circle-box">
+    <canvas class="circle" style="z-index: -99; width:200px; height:200px;" canvas-id="canvasCircle">
+    </canvas>
+     <canvas class="circle" style="width:200px; height:200px;" canvas-id="canvasArcCir">
+    </canvas> 
+  <view class="draw_btn" bindtap="drawCircle">点击灌溉</view>
+
+
+</view>
+
+</view>
+
+<view class="explain">
+    使用说明：若想灌溉植物请点击“点击灌溉”按钮，一次可浇水一分钟。
+</view>
+
+</view>
+
+  
+  

@@ -1,0 +1,21 @@
+<!--humidity.wxml-->
+
+<view class="page" style="background-image: url('');  " >
+
+<view class="container">
+
+<!-- 实时监控 -->
+<view class="getVideo">
+ <video class="video" src="{{video_src}}"  controls type="application/vnd.apple.mpegurl">
+ </video>
+
+
+ <view class="btn-area">
+   <button class="videoButton" bindtap="getVideo" plain="true" hover="true" hover-class="button-hover" size="">点击获取实时监控</button>
+ </view> 
+
+</view>
+
+</view> 
+
+</view>
